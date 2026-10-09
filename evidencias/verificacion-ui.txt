@@ -1,0 +1,1 @@
+Interfaz verificada con Chromium: 10 vistas, simulación, formulario de área, generación de informes y móvil 390 px. Sin errores de JavaScript.

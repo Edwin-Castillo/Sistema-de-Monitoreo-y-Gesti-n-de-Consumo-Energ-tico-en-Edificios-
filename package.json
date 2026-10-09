@@ -1,0 +1,27 @@
+{
+  "name": "energia-pg2",
+  "version": "1.0.0",
+  "description": "Sistema de monitoreo energético con simulación IoT — entrega 5.1",
+  "main": "index.js",
+  "scripts": {
+    "build": "esbuild src/App.jsx --bundle --minify --outfile=public/app.js",
+    "start": "node server.js",
+    "test": "node --test tests/integration.test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "UNLICENSED",
+  "type": "commonjs",
+  "dependencies": {
+    "aedes": "^0.51.3",
+    "esbuild": "^0.25.12",
+    "mqtt": "^5.14.1",
+    "oracledb": "^6.10.0",
+    "pdfkit": "^0.17.2",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "engines": {
+    "node": ">=22.13.0"
+  }
+}
