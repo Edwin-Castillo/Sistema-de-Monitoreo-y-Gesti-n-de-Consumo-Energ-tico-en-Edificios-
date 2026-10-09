@@ -15,20 +15,6 @@ Mantener abierta la consola. Para detener el programa, usar Ctrl+C. Para ejecuta
 
 Linux/macOS: ejecutar `bash iniciar.sh`. Alternativa en cualquier sistema: `npm ci` y `npm start`. El frontend ya viene compilado y funciona sin CDN. Para modificarlo: editar `src/App.jsx` y ejecutar `npm run build`.
 
-## Demostración sugerida para el punto 5.1
-
-1. Iniciar sesión y abrir Vista general. Observar inicialmente «No disponible» para energía y potencia sin lecturas.
-2. Iniciar el simulador. Verificar la recepción, la potencia y el incremento de energía.
-3. En Activos y áreas, editar PM-001 y cambiar su intervalo a **1 segundo** para agilizar la demostración.
-4. En Simulación, configurar PM-001 en **Sobrecarga**, pérdida 0 % y latencia 0 ms. Su corriente será 18.4 A con los parámetros iniciales.
-5. La regla inicial detecta corriente mayor a 12 A durante dos lecturas consecutivas. Abrir Anomalías y revisar su evidencia.
-6. Volver al escenario Normal. Una vez recibida la recuperación, registrar una observación y cerrar el evento. No permite cerrar mientras la condición esté activa.
-7. Configurar Desconexión o pérdida 100 %. Revisar mensajes perdidos, caída de la tasa de recepción y «Sin comunicación» después de tres intervalos sin recibir.
-8. Recuperar el escenario normal y probar una latencia de 2000 ms. Verificar la cola y las horas de medición y recepción.
-9. Consultar los 17 indicadores, aplicar filtros y generar un informe. Descargar PDF y CSV.
-10. Crear cuentas Técnico y Consulta en Usuarios. Comprobar: Técnico genera informes; Consulta solamente consulta y descarga los existentes. Solo Administrador modifica activos, reglas, anomalías, simulación, cuentas y configuración.
-11. Reiniciar y verificar que el historial permanece. La simulación arranca pausada por diseño.
-
 ## Módulos implementados
 
 - Acceso, sesión de una hora, cierre de sesión y validación de permisos también en la API.
